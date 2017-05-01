@@ -1,0 +1,411 @@
+/* -- base style --*/
+* {
+margin: 0px;
+outline: 0px;
+border:0px;
+padding:0px;
+font-size: 100%;
+vertical-align: baseline;
+background-color: transparent;
+}
+
+html {
+  font-size: 1em;
+  line-height: 1.4em;
+  font-family: 'Hind',sans-serif;
+}
+
+button{
+  border:none;
+}
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.container{
+  width: 1120px;
+  margin:0 auto;
+  border: 1px solid transparent;
+}
+
+.clearfix{clear: both;}
+
+::selection{
+  background-color: #b3d4fc;
+  box-shadow: none;
+  }
+
+  ::-moz-selection{
+    background-color: #b3d4fc;
+    box-shadow: none;
+  }
+
+  ::-webkit-selection{
+    background-color: #b3d4fc;
+    box-shadow: none;
+  }
+
+/* -- end of base style --*/
+
+/* -- Start Header --*/
+header{
+background-image: url('../img/bgheader.jpg');
+background-repeat: no-repeat;
+height:635px;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+
+}
+
+header div.overly{
+  background-color: rgba(0,0,0,0.5); /* or declare color:#000; and opacity:0.5 */
+  width: 100%;
+  height:100%;
+}
+
+
+
+
+
+div.logo > span{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #03a9f4;
+  text-align: center;
+  line-height: 35px;
+  font-size: 1.1em;
+  color:#fff;
+  border-radius: 2px;
+  float: left;
+}
+div.logo  h3 {
+  display: inline-block;
+  color:#fff;
+  font-size: 1.4em;
+  font-weight: normal;
+  float: right;
+  padding: 5px 0 0 10px;
+}
+
+div.logo h3 span{
+  font-weight: bold;
+}
+
+nav{padding-top: 40px;}
+
+nav div.logo{
+  float: left;
+}
+
+nav ul{
+  float:right;
+  list-style-type: none;
+}
+nav ul li {
+float: left;
+text-align: center;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 7px 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  margin:5px;
+}
+nav ul li:last-of-type {
+  box-shadow: -10px 0 0 -9px rgba(255,255, 255, 0.4);
+
+}
+
+nav ul li::after{
+ content:"";
+ display:block;
+ width:0;
+ height:2px;
+ background-color: #03a9f4;
+ transition: width .4s ease-in-out;
+
+}
+
+nav ul li:hover::after{
+  width: 100%;
+}
+
+div.intro {
+  width:850px;
+  margin: 100px auto;
+  text-align: center;
+  color: #FFF;
+
+}
+div.intro h4 {
+  font-weight: normal;
+  font-size: 1.6em;
+  margin-bottom: 35px;
+}
+div.intro h4 span {
+  font-weight: bold;
+}
+
+div.intro h1 {
+margin-bottom: 35px;
+letter-spacing: 5px;
+text-transform: uppercase;
+}
+div.intro p {
+  line-height: 2.5em;
+  margin-bottom: 50px;
+}
+
+div.intro button {
+  padding: 15px 37px;
+  text-align: center;
+  color:#FFF;
+  background-color: #03a9f4;
+  border-radius: 3px;
+  cursor:pointer;
+  font-weight: bold;
+}
+
+div.indicator{
+  width: 80px;
+  height: 20px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+div.indicator a{
+ width:12px;
+ height: 12px;
+ background-color: #CCC;
+ display:block;
+ float: left;
+ margin: 4px ;
+ border-radius: 1px;
+}
+
+div.indicator a[selected]{
+  background-color: #03a9f4;
+}
+div.indicator a:hover{
+  background-color: orange;
+}
+
+/*
+nav ul li a:hover {
+  border-bottom: 2px solid #03a9f4;;
+}
+*/
+
+/* -- End of Header --*/
+
+/* -- Start Section Services --*/
+
+section.services{
+  width:100%;
+  margin: 0;
+}
+
+section.services div.boxServices{
+   width:25%;
+   float:left;
+   overflow: hidden;
+}
+/*
+section.services div:nth-child(1){background-color: #0000ff;}
+section.services div:nth-child(2){background-color: #03a9f4;}
+section.services div:nth-child(3){background-color: #0000ff;}
+section.services div:nth-child(4){background-color: #03a9f4;}
+*/
+section.services div.boxServices:nth-child(odd){background-color: #f6f0f0;}
+section.services div.boxServices:nth-child(even){background-color: #c5f9f5;}
+
+section.services div.boxServices div{
+  text-align:center;
+  margin:25px;
+  overflow: hidden;
+}
+
+section.services div.boxServices div span{
+/*  display: block;
+  margin: 0 auto;  OR */
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #03a9f4;
+  color: #fff;
+  line-height: 55px;
+  font-size: 1.8em;
+  border-radius: 2px;
+}
+
+section.services div.boxServices div h3{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* to uppercase => text-transform: uppercase; */
+
+}
+
+section.services div.boxServices div p{
+   line-height: 1.8em;
+   color: #cdcdcd;
+   margin-bottom:  20px;
+}
+section.services div.boxServices div a{
+  display: block;
+  text-decoration: none;
+  color: #03a9f4;
+  font-weight: bold;
+  font-size: .8em;
+  letter-spacing: 1px;
+}
+section.services div.boxServices div a:hover{
+  color: orange;
+}
+
+
+/* -- End Section Services --*/
+
+/* -- Start Section Portfolio --*/
+
+section.portfolio {
+
+  background-color: #fff;
+  text-align: center;
+  padding: 40px 0 0 0;
+}
+
+section.portfolio h2 {
+  font-size: 3em;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+section.portfolio p{
+  width: 800px;
+  margin:20px auto;
+  line-height: 2em;
+  color: #cdcdcd;
+
+}
+
+ div.menuphoto ul{
+  list-style-type: none;
+  width:600px;
+  margin: 0px auto;
+
+}
+
+ div.menuphoto ul li {
+  display: block;
+  float: left;
+
+}
+
+ div.menuphoto ul li a{
+  padding : 10px 15px;
+  text-decoration: none;
+  color:#03a9f4;
+  font-size: 0.9em;
+  font-weight: bold;
+
+}
+
+
+
+div.menuphoto ul li::after{
+ content:"";
+ display:block;
+ width:0;
+ height:2px;
+ background-color: #03a9f4;
+ transition: width .4s ease-in-out;
+
+}
+
+div.menuphoto ul li:hover::after{
+  width: 100%;
+}
+
+div.menuphoto div.gallery {
+   width: 100%;
+   margin-top:20px;
+
+}
+div.menuphoto div.gallery img{
+  width:25%;
+  height: 315px;
+  display: block;
+  float: left;
+  margin-bottom: 20px;
+}
+
+div.menuphoto div.gallery a{
+
+  text-decoration: none;
+  color:#03a9f4;
+  font-size: 0.9em;
+  font-weight: bold;
+
+  display: block;
+  margin-bottom: 40px;
+}
+
+/* -- End Section Portfolio --*/
+
+/* -- Start Section Blog --*/
+section.blog{
+  height: 350px;
+  background: url('../img/bgblog.jpg') no-repeat 0px -200px;
+
+
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  color:#FFF;
+}
+section.blog div.overly {
+  background-color: rgba(0, 0, 0,.5);
+  width: 100%;
+  height: 100%;
+}
+section.blog div.overly div.container{
+  width: 1120px;
+  height:340px;
+  margin:0 auto;
+
+}
+section.blog div.overly div.container div.content{
+  margin : 100px auto;
+  width: 1000px;
+  text-align: center;
+}
+
+section.blog div.overly div.container div.content p {
+  margin-bottom: 35px;
+  line-height: 2em;
+  font-style: normal;
+
+}
+
+section.blog div.overly div.container div.content button{
+  padding: 15px 37px;
+  text-align: center;
+  color:#FFF;
+  background-color: #03a9f4;
+  border-radius: 3px;
+  cursor:pointer;
+  font-weight: bold;
+}
+/* -- End Section Blog --*/
