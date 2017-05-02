@@ -368,7 +368,6 @@ section.blog{
   height: 350px;
   background: url('../img/bgblog.jpg') no-repeat 0px -200px;
 
-
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -409,3 +408,38 @@ section.blog div.overly div.container div.content button{
   font-weight: bold;
 }
 /* -- End Section Blog --*/
+
+/* -- Start Section News --*/
+section.news{
+  background-color: red;
+  text-align: center;
+  padding: 60px 0 0 0;
+}
+
+section.news h2{
+  font-size: 3em;
+  font-style: normal;
+  margin-bottom: 20px;
+
+}
+
+ section.news > p {
+ width:800px;
+ margin: 20px auto;
+ line-height: 2em;
+
+
+}
+
+section.news div.container div{
+  width: 33.33%;
+  float: left;
+
+
+}
+
+section.news div.container div img{
+  width:
+}
+
+/* -- End Section News --*/
