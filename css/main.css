@@ -227,13 +227,14 @@ section.services div:nth-child(2){background-color: #03a9f4;}
 section.services div:nth-child(3){background-color: #0000ff;}
 section.services div:nth-child(4){background-color: #03a9f4;}
 */
-section.services div.boxServices:nth-child(odd){background-color: #f6f0f0;}
-section.services div.boxServices:nth-child(even){background-color: #c5f9f5;}
+section.services div.boxServices:nth-child(odd){background-color: #f2fcfb;}
+section.services div.boxServices:nth-child(even){background-color: #fff;}
 
 section.services div.boxServices div{
   text-align:center;
   margin:25px;
   overflow: hidden;
+  border: 1px solid black;
 }
 
 section.services div.boxServices div span{
@@ -411,13 +412,14 @@ section.blog div.overly div.container div.content button{
 
 /* -- Start Section News --*/
 section.news{
-  background-color: red;
+
   text-align: center;
   padding: 60px 0 0 0;
+  height: 600px;
 }
 
 section.news h2{
-  font-size: 3em;
+  font-size: 2.5em;
   font-style: normal;
   margin-bottom: 20px;
 
@@ -427,19 +429,160 @@ section.news h2{
  width:800px;
  margin: 20px auto;
  line-height: 2em;
- padding: 0 0 0 0 ;
+
 
 }
 
 section.news div.container div{
-  width: 33.33%;
+  width: 30%;
   float: left;
-
-
+  height: 230px;
+  margin-right: 5%;
 }
 
+section.news div.container div:last-child{
+  margin-right: 0px;
+}
 section.news div.container div img{
-  width:
+width: 100%;
+height: 230px;
+border-radius: 3px;
+}
+
+section.news div.container div span{
+  color:#cccccc;
+
+  display: block;
+  margin-top: 25px;
+  margin-bottom:  25px;
+}
+
+section.news div.container div p{
+
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.7em;
+  color:#03a9f4;
 }
 
 /* -- End Section News --*/
+/* -- Start section Our Team --*/
+
+section.ourteam {
+  background-color: #f2fcfb;
+  text-align: center;
+  padding: 60px 0 0 0;
+  height: 600px;
+}
+
+section.ourteam h2{
+  font-size: 2.5em;
+  font-style: normal;
+  margin-bottom: 20px;
+
+}
+
+ section.ourteam > p {
+ width:800px;
+ margin: 20px auto;
+ line-height: 2em;
+
+
+}
+
+section.ourteam div.container div {
+  width: 22.75%;
+  height:330px;
+  float:left;
+  margin-right: 3%;
+  position: relative;
+}
+
+section.ourteam div.container div:last-child{
+  margin-right: 0;
+}
+
+section.ourteam div.container div img{
+  width:100%;
+  height: 330px;
+}
+section.ourteam div.container div div.overly {
+  background-color: rgba(0, 0, 0,.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+
+}
+section.ourteam div.container div div.imgContent{
+
+
+  position: absolute;
+  top:10%;
+  left:10%;
+  width:80%;
+  height: 80%;
+
+  overflow: hidden;
+
+}
+
+section.ourteam div.container div div.imgContent p{
+  color:#fff;
+}
+
+section.ourteam div.container div div.imgContent p > span{
+  color: #03a9f4;
+  display:inline;
+  margin-top: 0;
+}
+
+section.ourteam div.container div div.imgContent div.social{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+}
+
+
+section.ourteam div.container div div.imgContent div.social  a {
+  color:#FFF;
+  font size: 2em;
+  display:block;
+  float: left;
+  width:15%;
+  height:25px;
+  line-height: 30px;
+  margin-right: 2%;
+  margin-top: 60px;
+  border-radius: 2px;
+
+
+  background-color:#03a9f4;
+}
+
+section.ourteam div.container div div.imgContent div.social  a:hover{
+  background-color:orange;
+}
+
+section.ourteam div.container div div.imgContent div.social a:last-child{
+  margin-right: 0;
+}
+
+
+
+section.ourteam div.container div h3{
+margin-top: 20px;
+}
+
+section.ourteam div.container div span{
+  color:#cdcdcd;
+
+  display: block;
+  margin-top: 15px;
+}
+
+
+
+/* -- Start section Our Team --*/
